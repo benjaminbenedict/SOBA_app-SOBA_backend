@@ -1,4 +1,5 @@
 class Home < ApplicationRecord
   has_many :images
-  belongs_to :user, through: :ratings 
+  has_many :ratings
+  has_many :users, through: :ratings
 end
