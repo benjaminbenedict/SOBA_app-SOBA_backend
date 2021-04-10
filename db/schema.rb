@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2021_04_09_011946) do
     t.integer "bathrooms"
     t.integer "sq_ft"
     t.string "description"
-    t.string "type"
+    t.string "home_type"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
