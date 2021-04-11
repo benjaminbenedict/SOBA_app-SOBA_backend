@@ -9,14 +9,14 @@ Rails.application.routes.draw do
     
     # IMAGES ACTIONS
     get "/images" => "images#index"
-    get "/images/:id" => "users#show"
+    get "/images/:id" => "images#show"
 
     post "/users" => "users#create"
     post "/sessions" => "sessions#create"
 
 
     get "/homes" => "homes#index"
-    post "/homes/:id" => "homes#show"
+    get "/homes/:id" => "homes#show"
 
     get "/ratings" => "ratings#index"
     post "/ratings" => "ratings#create"
