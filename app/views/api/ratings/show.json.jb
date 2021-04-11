@@ -1,0 +1,6 @@
+{
+  id: @rating.id,
+  user_id: @rating.user_id,
+  home_id: @rating.home_id,
+  liked: @rating.liked,
+}
