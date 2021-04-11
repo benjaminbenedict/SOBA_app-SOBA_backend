@@ -1,0 +1,10 @@
+{
+  id: @home.id,
+  address: @home.address,
+  price: @home.price,
+  bedrooms: @home.bedrooms,
+  bathroom: @home.bathrooms,
+  sq_ft: @home.sq_ft,
+  description: @home.description,
+  home_type: @home.home_type,
+}

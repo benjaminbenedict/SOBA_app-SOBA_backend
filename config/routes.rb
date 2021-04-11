@@ -6,8 +6,13 @@ Rails.application.routes.draw do
   namespace :api do
     post "/users" => "users#create"
 
+
+    get "/homes" => "homes#index"
+    post "/homes/:id" => "homes#show"
+
     get "/ratings" => "ratings#index"
     post "/ratings" => "ratings#create"
     get "/ratings/:id" => "ratings#show"
+
   end
 end
