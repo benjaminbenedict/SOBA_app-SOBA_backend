@@ -1,0 +1,5 @@
+{
+  id: @image.id,
+  home_id: @image.home_id,
+  image_url: @image.image_url,
+}
