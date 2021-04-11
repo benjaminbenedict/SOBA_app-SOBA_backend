@@ -6,21 +6,21 @@ Rails.application.routes.draw do
   #there are going to be conflicts here like i said so i'm going to be annoyed
   namespace :api do
 
-    
-    # IMAGES ACTIONS
-    get "/images" => "images#index"
-    get "/images/:id" => "users#show"
-
+    # USERS ACTIONS
     post "/users" => "users#create"
     post "/sessions" => "sessions#create"
 
-
+    # HOMES ACTIONS
     get "/homes" => "homes#index"
-    post "/homes/:id" => "homes#show"
+    get "/homes/:id" => "homes#show"
 
+    # IMAGES ACTIONS
+    get "/images" => "images#index"
+    get "/images/:id" => "images#show"
+    
+    # RATINGS ACTIONS
     get "/ratings" => "ratings#index"
     post "/ratings" => "ratings#create"
     get "/ratings/:id" => "ratings#show"
-
   end
 end
