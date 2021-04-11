@@ -3,4 +3,6 @@ class User < ApplicationRecord
   has_many :ratings
   has_many :homes, through: :ratings
   validates :email, presence: true, uniqueness: true
+  has_many :ratings
+  has_many :homes, through: :ratings
 end
